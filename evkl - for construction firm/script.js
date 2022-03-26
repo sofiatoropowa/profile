@@ -34,8 +34,14 @@ window.addEventListener('DOMContentLoaded', function() {
 })
 
 /* search */
-window.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('#search').addEventListener('click', function() {
-    document.querySelector('#search__string').classList.toggle('is-active')
-  })
-})
+let lyp = document.querySelector('.search');
+let pole = document.querySelector('.search__box');
+let exit = document.querySelector('.search__exit');
+
+lyp.addEventListener('click', function(){
+  pole.classList.toggle('search__box-active');
+});
+
+exit.addEventListener('click', function(){
+  pole.classList.toggle('search__box-active');
+});
