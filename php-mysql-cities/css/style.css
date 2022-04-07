@@ -1,0 +1,117 @@
+:root {
+    --font-color: #3366FF;
+    --background-color: rgba(0,0,0,0.2);
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*general*/
+.container {
+    width: 1680px;
+    margin: 0 auto;
+    max-width: 95%;
+}
+  
+.btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+}
+
+/* form */
+.title {
+    text-align: center;
+    font-size: 32px;
+    color: var(--font-color);
+}
+
+.form__container {
+    margin: auto;
+    background: var(--background-color);
+    border-radius: 10px;
+    width: 400px;
+    padding: 30px 40px;
+}
+
+.form__label {
+    font-size: 20px;
+    color: var(--font-color);
+}
+
+.modal-input {
+    width: 380px;
+    height: 60px;
+    background: #FFFFFF;
+    font-size: 16px;
+    border: 1px solid var(--font-color);
+    border-radius: 10px;
+    margin-bottom: 31px;
+    padding-left: 20px;
+}
+
+.modal-btn {
+    width: 192px;
+    height: 60px;
+    padding: auto;
+    background: var(--font-color);
+    color: #FFFFFF;
+    font-size: 20px;
+    opacity: 0.4;
+    transition: 0.5s;
+}
+
+.just-validate-error-label {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -32px;
+}
+
+/* buttons */
+.buttons {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.buttons__table {
+    width: 180px;
+    height: 40px;
+    padding: auto;
+    background: var(--background-color);
+    border: 1px solid var(--font-color);
+    color: var(--font-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.buttons__table:not(:nth-child(2n)) {
+    margin-right: 40px;
+}
+
+/* table */
+
+table {
+    margin: auto;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background: #808080;
+    color: white;
+}
+
+td {
+    background: var(--background-color);
+}
+
+.table-active {
+    height: 0; 
+    overflow: hidden;
+}
