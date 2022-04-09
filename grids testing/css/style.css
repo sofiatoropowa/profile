@@ -1,0 +1,495 @@
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto-Bold'),
+		url('fonts/Roboto-Bold.woff2') format('woff2'),
+		url('fonts/Roboto-Bold.woff') format('woff');
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto-Regular'),
+		url('../fonts/Roboto-Regular.woff2') format('woff2'),
+		url('../fonts/Roboto-Regular.woff') format('woff');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+:root {
+    --background2-color: #212133;
+    --background-color: #3F2AFF;
+    --title-color: #FFFFFF;
+}
+  
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.btn {
+    cursor: pointer;
+    background: var(--background-color);
+    border: none;
+    border-radius: 20px;
+    color: var(--title-color);
+}
+
+/* glob */
+.container-fluid {
+    max-width: 1110px;
+}
+
+/* header */
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header__menu {
+    background-color: var(--background-color);
+    padding: 30px 165px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.header__nav {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--title-color);
+}
+
+.nav-search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 56px;
+}
+
+/* hero */
+.hero {
+    padding: 130px 165px;
+    background: url('../img/hero.png'), radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+    background-position: 80% 50%;
+    background-repeat: no-repeat;
+    background-size: 50%, auto;
+}
+
+.hero__header {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100%;
+    color: var(--title-color);
+    max-width: 460px;
+    margin-bottom: 30px;
+}
+
+.hero__text {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--title-color);
+    max-width: 444px;
+    margin-bottom: 70px;
+}
+
+.hero__btn {
+    padding: 24px 75.5px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/* advantages */
+.advantages__info {
+    background: url('../img/texture.png') left center no-repeat;
+    padding-left: 190px;
+}
+
+.advantages__header {
+    font-size: 40px;
+    line-height: 100%;
+    color: #2E2B44;
+    max-width: 380px;
+}
+
+.advantages__text {
+    font-size: 16px;
+    line-height: 150%;
+    color: #666666;
+    max-width: 585px;
+}
+
+.advantages__card {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;    
+    color: #666666;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 80px;
+    padding-left: 110px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.advantages__card1 {
+    background-image: url('../img/eye-circle.svg');
+}
+
+.advantages__card2 {
+    background-image: url('../img/fingers.svg');
+}
+
+.advantages__card3 {
+    background-image: url('../img/horn.svg');
+}
+
+/* teachers */
+.teachers {
+    background: var(--background2-color);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.teachers__header {
+    font-size: 40px;
+    line-height: 100%;
+    color: var(--title-color);
+    margin-bottom: 30px;
+}
+
+.teachers__card {
+    max-width: 95%;
+}
+
+.teachers__photo {
+    padding: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+    object-fit: cover;
+    border-radius: 35px 35px 0 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.teachers__name {
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--title-color);
+}
+
+.teachers__text {
+    font-size: 16px;
+    line-height: 150%;
+    color: #85859B;
+}
+
+/* courses */
+.courses__header {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--background2-color);
+}
+
+.courses_colum {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.gy-4 {
+    --bs-gutter-y: 30px;
+}
+
+.courses__card {
+    background-color: #EDF0F9;
+    border-radius: 20px;
+    max-width: 95%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.courses__img {
+    max-width: 100%;
+}
+
+.courses-card__header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--background2-color);
+    margin: 30px 30px 15px 30px;
+}
+
+.courses-card__text {
+    margin: 15px 30px 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #666666;
+    max-width: 480px;
+}
+
+.courses__btn {
+    padding: 20.5px 59px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    max-width: 200px;
+}
+
+/* footer */
+.footer__container {
+    background-color: #2E2B44;
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
+
+.footer__social {
+    text-align: center;
+}
+
+.social__li {
+    display: inline-block;
+}
+
+.social__li:not(:last-child) {
+    margin-right: 34px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .header__menu {
+        padding: 30px 39px;
+    }
+
+    .hero {
+        padding: 130px 30px;
+        background-position: 90% 50%;
+        background-size: 45%, auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .hero {
+        padding: 130px 30px;
+        background-position: 90% 50%;
+        background-size: 45%, auto;
+    }
+
+    .hero__header {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .header__menu {
+        flex-direction: column;
+    }
+
+    .header__logo {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .nav__item:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .hero {
+        padding-bottom: 135px;
+    }
+
+    .hero__text {
+        max-width: 345px;
+    }
+
+    .advantages__header {
+        max-width: 385px;
+    }
+
+    .advantages__text {
+        max-width: 450px;
+    }
+
+    .advantages__card {
+        background-position: top left;
+        padding-left: 0;
+        padding-top: 90px;
+    }
+
+    .courses-card__header {
+        font-size: 16px;
+    }
+
+    .courses__btn {
+        padding: 20.5px 55.5px;
+        max-width: 180px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .hero {
+        padding-left: 33px;
+        padding-top: 77px;
+    }
+
+    .hero__header {
+        max-width: 330px;
+    }
+
+    .hero {
+        background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+    }
+
+    .courses__btn {
+        padding: 20.5px 38px;
+        max-width: 180px;
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+    .header__logo {
+        margin-bottom: 0;
+    }
+        
+    .nav-search {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        float: right;
+    }
+
+    .header__menu {
+        display: block;
+    }
+
+    .hero {
+        padding: 50px 15px 0 15px;
+    }
+
+    .hero__header {
+        font-size: 30px;
+        max-width: 385px;
+        margin-bottom: 15px;
+    }
+    
+    .hero__text {
+        font-size: 16px;
+        line-height: 130%;
+        max-width: 290px;
+        margin-bottom: 50px;
+    }
+        
+    .hero__btn {
+        padding: 20.5px 53.5px;
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 50px;
+    }
+    
+    .advantages__info {
+        background: none;
+        padding-left: 0;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    section {
+        margin-bottom: 50px;
+    }
+
+    .header__logo {
+        width: 72px;
+    }
+
+    .advantages__card {
+        background-position: top center;
+    }
+
+    .advantages__header {
+        font-size: 20px;
+        line-height: 130%;
+        max-width: 290px;
+    }
+    
+    .advantages__text {
+        max-width: 290px;
+    }
+
+    .teachers {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .teachers__header {
+        font-size: 20px;
+    }
+
+    .courses__header {
+        font-size: 20px;
+    }
+
+    .courses__btn {
+        padding: 20.5px 55.5px;
+        max-width: 195px;
+    }
+
+}
+
+
