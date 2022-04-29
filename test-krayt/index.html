@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="container header">
+        <p class="header__logo">Frispes.</p>
+        <nav>
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="#">Home</a></li>
+                <li class="header__menu-item"><a href="#our-space">Workspace</a></li>
+                <li class="header__menu-item"><a href="#why-frispes">Service</a></li>
+                <li class="header__menu-item"><a href="#events">Events</a></li>
+                <li class="header__menu-item"><a href="#reviews">Reviews</a></li>
+                <li class="header__menu-item"><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="header__btns">
+            <button class="header__btns-login">Log In</button>
+            <button class="header__btns-sign-up">Sign Up</button>
+        </div>
+        <button class="burger">
+            <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.6875 16.5625C0.6875 16.3139 0.786272 16.0754 0.962088 15.8996C1.1379 15.7238 1.37636 15.625 1.625 15.625H20.375C20.6236 15.625 20.8621 15.7238 21.0379 15.8996C21.2137 16.0754 21.3125 16.3139 21.3125 16.5625C21.3125 16.8111 21.2137 17.0496 21.0379 17.2254C20.8621 17.4012 20.6236 17.5 20.375 17.5H1.625C1.37636 17.5 1.1379 17.4012 0.962088 17.2254C0.786272 17.0496 0.6875 16.8111 0.6875 16.5625ZM0.6875 9.0625C0.6875 8.81386 0.786272 8.5754 0.962088 8.39959C1.1379 8.22377 1.37636 8.125 1.625 8.125H20.375C20.6236 8.125 20.8621 8.22377 21.0379 8.39959C21.2137 8.5754 21.3125 8.81386 21.3125 9.0625C21.3125 9.31114 21.2137 9.5496 21.0379 9.72541C20.8621 9.90123 20.6236 10 20.375 10H1.625C1.37636 10 1.1379 9.90123 0.962088 9.72541C0.786272 9.5496 0.6875 9.31114 0.6875 9.0625ZM0.6875 1.5625C0.6875 1.31386 0.786272 1.0754 0.962088 0.899588C1.1379 0.723772 1.37636 0.625 1.625 0.625H20.375C20.6236 0.625 20.8621 0.723772 21.0379 0.899588C21.2137 1.0754 21.3125 1.31386 21.3125 1.5625C21.3125 1.81114 21.2137 2.0496 21.0379 2.22541C20.8621 2.40123 20.6236 2.5 20.375 2.5H1.625C1.37636 2.5 1.1379 2.40123 0.962088 2.22541C0.786272 2.0496 0.6875 1.81114 0.6875 1.5625Z" fill="white"/>
+            </svg>
+        </button>
+    </header>
+    <main>
+        <section class="container hero">
+            <h2 class="hero__subtitle">Introducing</h2>
+            <div class="hero__block">
+                <h1 class="hero__title"><div class="hero__word">Revolutionary</div> co-working space to realize your innovation</h1>
+                <p class="hero__text">In frispes, we spearhead new initiatives and provide mentorship to a new startup, and help grow their opportunities in key local, regional and global markets</p>
+            </div>
+            <img src="img/hero.jpg" alt="Hero photo">
+            <div id="our-space" class="our-space">
+                <h2 class="our-space__title">Our Spaces</h2>
+                <p class="our-space__text">Our space is designed to give you a different experience when working with your team or personally</p>    
+                <div class="arrows our-space__arrows">
+                    <svg class="arrows__left" width="53" height="27" viewBox="0 0 53 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.448429 14.7981L9.6525 25.9884C9.94822 26.3465 10.3179 26.5255 10.6875 26.5255C11.0572 26.5255 11.4268 26.3465 11.7225 25.9884C12.3139 25.2722 12.3139 24.1532 11.7225 23.437L5.03198 15.2905H26.6191C27.4323 15.2905 28.0977 14.4848 28.0977 13.5001C28.0977 12.5153 27.4323 11.7096 26.6191 11.7096H5.03198L11.7225 3.56312C12.3139 2.84695 12.3139 1.72792 11.7225 1.01174C11.1311 0.295565 10.207 0.295565 9.61555 1.01174L0.411451 12.202C-0.143013 12.9629 -0.142998 14.1267 0.448429 14.7981Z" fill="#9A9A9A"/>
+                        <rect width="50" height="4.00159" rx="2.00079" transform="matrix(-1 0 0 1 52.6855 11.5194)" fill="#9A9A9A"/>
+                    </svg>
+                    <svg class="arrows__right" width="92" height="27" viewBox="0 0 92 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M91.2371 14.7981L82.033 25.9884C81.7373 26.3465 81.3677 26.5255 80.998 26.5255C80.6284 26.5255 80.2587 26.3465 79.963 25.9884C79.3716 25.2722 79.3716 24.1532 79.963 23.437L86.6536 15.2905H65.0665C64.2532 15.2905 63.5879 14.4848 63.5879 13.5001C63.5879 12.5153 64.2532 11.7096 65.0665 11.7096H86.6536L79.963 3.56312C79.3716 2.84695 79.3716 1.72792 79.963 1.01174C80.5545 0.295565 81.4786 0.295565 82.07 1.01174L91.2741 12.202C91.8286 12.9629 91.8285 14.1267 91.2371 14.7981Z" fill="#FF5722"/>
+                        <rect y="11.307" width="88.7142" height="4.47534" rx="2.23767" fill="#FF5722"/>
+                    </svg>
+                </div>
+            </div>
+            <ul class="our-space__list">
+                <li class="our-space__card1">
+                    <div class="our-space__card-block">
+                        <img src="img/our-space1.jpg" alt="Working with team" class="our-space__btn-on-card">
+                        <button class="our-space__card-btn2"></button>
+                    </div>
+                    <p class="our-space__caption">Working with team</p>
+                </li>
+                <li class="our-space__card our-space__600">
+                    <h3 class="our-space__card-title">Private Space</h3>
+                    <p class="our-space__card-text">Comfortable space, Full speed wifi, Free coffe & Snack and many more</p>
+                    <button class="our-space__card-btn">Check avaibility</button>
+                </li>
+                <li class="our-space__card1 our-space__card1_adaptive">
+                    <div class="our-space__card-block">
+                        <img src="img/our-space2.jpg" alt="Custom office">
+                        <button class="our-space__card-btn2"></button>
+                    </div>
+                    <p class="our-space__caption">Custom Office</p>
+                </li>
+            </ul>
+            <img class="our-space__img" src="img/Nav.png" alt="">
+        </section>
+        <section id="why-frispes" class="container why-frispes">
+            <ul class="why-frispes__list why-frispes__list1 why-frispes__max">
+                <li class="why-frispes__item">
+                    <p class="why-frispes__item-number why-frispes__number1">500+</p>
+                    <p class="why-frispes__item-advantage">Meeting rooms</p>
+                </li>
+                <li class="why-frispes__item">
+                    <p class="why-frispes__item-number why-frispes__number2">60+</p>
+                    <p class="why-frispes__item-advantage">Countries</p>
+                </li>
+                <li class="why-frispes__item">
+                    <p class="why-frispes__item-number why-frispes__number3">5K+</p>
+                    <p class="why-frispes__item-advantage">Startup mentors</p>
+                </li>
+            </ul>
+            <ul class="why-frispes__list why-frispes__max">
+                <li class="why-frispes__item">
+                    <p class="why-frispes__item-number why-frispes__number4">100+</p>
+                    <p class="why-frispes__item-advantage">Event spaces</p>
+                </li>
+                <li class="why-frispes__item">
+                    <p class="why-frispes__item-number why-frispes__number5">500 Mbps</p>
+                    <p class="why-frispes__item-advantage">Internet speed</p>
+                </li>
+                <li class="why-frispes__item">
+                    <p class="why-frispes__item-number why-frispes__number6">200+</p>
+                    <p class="why-frispes__item-advantage">Communities inside</p>
+                </li>
+            </ul>
+            <div class="why-frispes__block">
+                <h2 class="why-frispes__subtitle">Why Frispes</h2>
+                <h3 class="why-frispes__title">We revolutionize your workspace</h3>
+                <p class="why-frispes__text">With a decade of insights and expertise, we're decided to reimagine co-working space, designed to help a new startup grow up and realize their ideas so they can give a positive impacts on many people</p>
+            </div>
+            <div class="why-frispes__870">
+                <ul class="why-frispes__list why-frispes__list1 why-frispes__list_870">
+                    <li class="why-frispes__item">
+                        <p class="why-frispes__item-number why-frispes__number1">500+</p>
+                        <p class="why-frispes__item-advantage">Meeting rooms</p>
+                    </li>
+                    <li class="why-frispes__item">
+                        <p class="why-frispes__item-number why-frispes__number2">60+</p>
+                        <p class="why-frispes__item-advantage">Countries</p>
+                    </li>
+                    <li class="why-frispes__item">
+                        <p class="why-frispes__item-number why-frispes__number3">5K+</p>
+                        <p class="why-frispes__item-advantage">Startup mentors</p>
+                    </li>
+                </ul>
+                <ul class="why-frispes__list why-frispes__list_870">
+                    <li class="why-frispes__item">
+                        <p class="why-frispes__item-number why-frispes__number4">100+</p>
+                        <p class="why-frispes__item-advantage">Event spaces</p>
+                    </li>
+                    <li class="why-frispes__item">
+                        <p class="why-frispes__item-number why-frispes__number5">500 Mbps</p>
+                        <p class="why-frispes__item-advantage">Internet speed</p>
+                    </li>
+                    <li class="why-frispes__item">
+                        <p class="why-frispes__item-number why-frispes__number6">200+</p>
+                        <p class="why-frispes__item-advantage">Communities inside</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="container our-facilities">
+            <h2 class="our-facilities__subtitle">Our Facilities</h2>
+            <h3 class="our-facilities__title">All facilities are designed to meet all your needs</h3>
+            <div class="our-facilities__block">
+                <ul class="our-facilities__list">
+                    <li class="our-facilities__list-item">Spacious parking area</li>
+                    <li class="our-facilities__list-item">Comfortable spaces</li>
+                    <li class="our-facilities__list-item">Cozy cafe</li>
+                    <li class="our-facilities__list-item">Child playground</li>
+                    <li class="our-facilities__list-item">Outdoor spaces</li>
+                </ul>
+                <img class="our-facilities__img" src="img/our-list.jpg" alt="Cafe photo">
+            </div>
+        </section>
+        <section class="frispes-gallery">
+            <div class="frispes-gallery__block">
+                <h2 class="frispes-gallery__subtitle">Frispes gallery</h2>
+                <h3 class="frispes-gallery__title">Immersive beautiful<br> co-working space gallery</h3>
+                <div class="frispes-gallery__arrows frispes-gallery__max">
+                    <svg class="arrows__left" width="53" height="27" viewBox="0 0 53 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.448429 14.7981L9.6525 25.9884C9.94822 26.3465 10.3179 26.5255 10.6875 26.5255C11.0572 26.5255 11.4268 26.3465 11.7225 25.9884C12.3139 25.2722 12.3139 24.1532 11.7225 23.437L5.03198 15.2905H26.6191C27.4323 15.2905 28.0977 14.4848 28.0977 13.5001C28.0977 12.5153 27.4323 11.7096 26.6191 11.7096H5.03198L11.7225 3.56312C12.3139 2.84695 12.3139 1.72792 11.7225 1.01174C11.1311 0.295565 10.207 0.295565 9.61555 1.01174L0.411451 12.202C-0.143013 12.9629 -0.142998 14.1267 0.448429 14.7981Z" fill="#9A9A9A"/>
+                        <rect width="50" height="4.00159" rx="2.00079" transform="matrix(-1 0 0 1 52.6855 11.5194)" fill="#9A9A9A"/>
+                    </svg>
+                    <svg class="arrows__right" width="92" height="27" viewBox="0 0 92 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M91.2371 14.7981L82.033 25.9884C81.7373 26.3465 81.3677 26.5255 80.998 26.5255C80.6284 26.5255 80.2587 26.3465 79.963 25.9884C79.3716 25.2722 79.3716 24.1532 79.963 23.437L86.6536 15.2905H65.0665C64.2532 15.2905 63.5879 14.4848 63.5879 13.5001C63.5879 12.5153 64.2532 11.7096 65.0665 11.7096H86.6536L79.963 3.56312C79.3716 2.84695 79.3716 1.72792 79.963 1.01174C80.5545 0.295565 81.4786 0.295565 82.07 1.01174L91.2741 12.202C91.8286 12.9629 91.8285 14.1267 91.2371 14.7981Z" fill="#FF5722"/>
+                        <rect y="11.307" width="88.7142" height="4.47534" rx="2.23767" fill="#FF5722"/>
+                    </svg>
+                </div>
+            </div>
+            <ul class="frispes-gallery__list">
+                <li class="frispes-gallery__list-item">
+                    <img src="img/our1.jpg" alt="">
+                </li>
+                <li class="frispes-gallery__list-item">
+                    <img src="img/our2.jpg" alt="">
+                </li>
+                <li class="frispes-gallery__list-item">
+                    <img src="img/our3.jpg" alt="">
+                </li>
+                <li class="frispes-gallery__list-item">
+                    <img src="img/our4.jpg" alt="">
+                </li>
+            </ul>
+            <div class="frispes-gallery__arrows frispes-gallery__660">
+                <svg class="arrows__left" width="53" height="27" viewBox="0 0 53 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.448429 14.7981L9.6525 25.9884C9.94822 26.3465 10.3179 26.5255 10.6875 26.5255C11.0572 26.5255 11.4268 26.3465 11.7225 25.9884C12.3139 25.2722 12.3139 24.1532 11.7225 23.437L5.03198 15.2905H26.6191C27.4323 15.2905 28.0977 14.4848 28.0977 13.5001C28.0977 12.5153 27.4323 11.7096 26.6191 11.7096H5.03198L11.7225 3.56312C12.3139 2.84695 12.3139 1.72792 11.7225 1.01174C11.1311 0.295565 10.207 0.295565 9.61555 1.01174L0.411451 12.202C-0.143013 12.9629 -0.142998 14.1267 0.448429 14.7981Z" fill="#9A9A9A"/>
+                    <rect width="50" height="4.00159" rx="2.00079" transform="matrix(-1 0 0 1 52.6855 11.5194)" fill="#9A9A9A"/>
+                </svg>
+                <svg class="arrows__right" width="92" height="27" viewBox="0 0 92 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M91.2371 14.7981L82.033 25.9884C81.7373 26.3465 81.3677 26.5255 80.998 26.5255C80.6284 26.5255 80.2587 26.3465 79.963 25.9884C79.3716 25.2722 79.3716 24.1532 79.963 23.437L86.6536 15.2905H65.0665C64.2532 15.2905 63.5879 14.4848 63.5879 13.5001C63.5879 12.5153 64.2532 11.7096 65.0665 11.7096H86.6536L79.963 3.56312C79.3716 2.84695 79.3716 1.72792 79.963 1.01174C80.5545 0.295565 81.4786 0.295565 82.07 1.01174L91.2741 12.202C91.8286 12.9629 91.8285 14.1267 91.2371 14.7981Z" fill="#FF5722"/>
+                    <rect y="11.307" width="88.7142" height="4.47534" rx="2.23767" fill="#FF5722"/>
+                </svg>
+            </div>
+        </section>
+        <section class="container who-use">
+            <h3 class="who-use__title">Who uses Frispes?</h3>
+            <p class="who-use__text">Big brands, small bussiness, new startuo and inividuals</p>
+            <ul class="who-use__list">
+                <li class="who-use__list-item">
+                    <img src="img/who-use1.png" alt="">
+                </li>
+                <li class="who-use__list-item">
+                    <img src="img/who-use2.png" alt="">
+                </li>
+                <li class="who-use__list-item">
+                    <img src="img/who-use3.png" alt="">
+                </li>
+                <li class="who-use__list-item">
+                    <img src="img/who-use4.png" alt="">
+                </li>
+                <li class="who-use__list-item">
+                    <img src="img/who-use5.png" alt="">
+                </li>
+                <li class="who-use__list-item">
+                    <img src="img/who-use6.png" alt="">
+                </li>
+            </ul>
+        </section>
+        <section id="reviews" class="reviews">
+            <div class="reviews__container">
+                <h2 class="reviews__subtitle">Reviews</h2>
+                <div class="reviews__block">
+                    <h3 class="reviews__title">What our customers are saying</h3>
+                    <div class="reviews__arrows">
+                        <svg class="arrows__left" width="53" height="27" viewBox="0 0 53 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.448429 14.7981L9.6525 25.9884C9.94822 26.3465 10.3179 26.5255 10.6875 26.5255C11.0572 26.5255 11.4268 26.3465 11.7225 25.9884C12.3139 25.2722 12.3139 24.1532 11.7225 23.437L5.03198 15.2905H26.6191C27.4323 15.2905 28.0977 14.4848 28.0977 13.5001C28.0977 12.5153 27.4323 11.7096 26.6191 11.7096H5.03198L11.7225 3.56312C12.3139 2.84695 12.3139 1.72792 11.7225 1.01174C11.1311 0.295565 10.207 0.295565 9.61555 1.01174L0.411451 12.202C-0.143013 12.9629 -0.142998 14.1267 0.448429 14.7981Z" fill="#9A9A9A"/>
+                            <rect width="50" height="4.00159" rx="2.00079" transform="matrix(-1 0 0 1 52.6855 11.5194)" fill="#9A9A9A"/>
+                        </svg>
+                        <svg class="arrows__right" width="92" height="27" viewBox="0 0 92 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M91.2371 14.7981L82.033 25.9884C81.7373 26.3465 81.3677 26.5255 80.998 26.5255C80.6284 26.5255 80.2587 26.3465 79.963 25.9884C79.3716 25.2722 79.3716 24.1532 79.963 23.437L86.6536 15.2905H65.0665C64.2532 15.2905 63.5879 14.4848 63.5879 13.5001C63.5879 12.5153 64.2532 11.7096 65.0665 11.7096H86.6536L79.963 3.56312C79.3716 2.84695 79.3716 1.72792 79.963 1.01174C80.5545 0.295565 81.4786 0.295565 82.07 1.01174L91.2741 12.202C91.8286 12.9629 91.8285 14.1267 91.2371 14.7981Z" fill="#FF5722"/>
+                            <rect y="11.307" width="88.7142" height="4.47534" rx="2.23767" fill="#FF5722"/>
+                        </svg>
+                    </div>
+                </div>
+                <ul class="reviews__list">
+                    <li class="reviews__card">
+                        <p class="reviews__card-text">Our team has been working at frispes for almost 2 months because our office still closed. During working at frispes, we feel a new experience, we can feel working with a beautiful, modern, and comfortable space. And cozy cafe with high-speed internet  in there. Thank you for frispes and team.</p>
+                        <div class="reviews__card-person">
+                            <p class="reviews__card-avatar">
+                                <img src="img/review1.png" alt="Pedro Ibanez">
+                            </p>
+                            <div>
+                                <p class="reviews__card-name">Pedro Ibanez</p>
+                                <p class="reviews__card-post">UI Designer at Google</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="reviews__card reviews__card2">
+                        <p class="reviews__card-text">The high-speed internet at frispes was so amazing. I can get best experience when running video call with my clients. Frispes has spacious and safe parking area, that’s what i need because i used to work as freelancer for a long time.</p>
+                        <div class="reviews__card-person">
+                            <p class="reviews__card-avatar">
+                                <img src="img/review2.png" alt="Raymond Thual">
+                            </p>
+                            <div>
+                                <p class="reviews__card-name">Raymond Thual</p>
+                                <p class="reviews__card-post">Professional Freelancer</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="reviews__card reviews__card3">
+                        <p class="reviews__card-text">Just three words : Frispes is Awesome!</p>
+                        <div class="reviews__card-person">
+                            <p class="reviews__card-avatar">
+                                <img src="img/review3.png" alt="Yuli Berlian">
+                            </p>
+                            <div>
+                                <p class="reviews__card-name">Yuli Berlian</p>
+                                <p class="reviews__card-post">IOS Dev at Tokopedia</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <img class="reviews__img" src="img/Indicator.svg" alt="">
+            </div>
+        </section>
+        <section class="container questions">
+            <h3 class="questions__title">Find the answers to anything you need in our Help Center</h3>
+            <ul class="questions__list">
+                <li class="questions__list-item questions__item1">
+                    <p>How do I know if a space is available?</p>
+                    <button class="questions__btn"><img src="img/pointer.svg" alt="" class="rotate"></button>
+                </li>
+                <li class="questions__list-item questions__item2">
+                    <p>How do i book a<br>space?</p>
+                    <button class="questions__btn questions__btn2"><img src="img/pointer_red.svg" alt="" class="rotate"></button>
+                </li>
+                <li class="questions__list-item questions__item1">
+                    <p>How do reviews<br> work?</p>
+                    <button class="questions__btn"><img src="img/pointer.svg" alt="" class="rotate"></button>
+                </li>
+            </ul>
+            <p class="questions__more">
+                <a href="#" class="more-active">More questions</a>
+            </p>
+        </section>
+        <section id="events" class="events">
+            <div class="container">
+                <div class="events__block">
+                    <h3 class="events__title">News, events and insights for you</h3>
+                    <p class="events__more events__more-max">
+                        <a href="#" class="more-active">See more</a>
+                    </p>
+                </div>
+                <ul class="events__list">
+                    <li class="events__list-item">
+                        <img src="img/events1.jpg" alt="Event photo">
+                    </li>
+                    <li class="events__list-item events__insight">
+                        <h4 class="events__insight-title">Google I / O 2020 news update</h4>
+                        <p class="events__insight-text">Out of concern for the health and safety of our developers, employees, and local communities — and in line with recent ...</p>
+                        <div class="events__insight-person">
+                            <p class="events__insight-avatar">
+                                <img src="img/ceo.png" alt="Sundar pichai">
+                            </p>
+                            <div>
+                                <p class="events__insight-name">Sundar pichai</p>
+                                <p class="events__insight-post">CEO at Google</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="events__list-item">
+                        <img src="img/events2.jpg" alt="Service photo 1" class="events__list-image">
+                        <p class="events__list-descr">Minimal workspace for inspirations</p>
+                        <p class="events__list-name">Anthony Masional</p>
+                    </li>
+                    <li class="events__list-item">
+                        <img src="img/events3.jpg" alt="Service photo 1" class="events__list-image">
+                        <p class="events__list-descr">Does productivity increase when&nbsp;working remotely ?</p>
+                        <p class="events__list-name">Franck Martin</p>
+                    </li>
+                    <li class="events__list-item">
+                        <img src="img/events4.jpg" alt="Service photo 1" class="events__list-image">
+                        <p class="events__list-descr">Morning routine to boost your mood</p>
+                        <p class="events__list-name">Elizabeth swan</p>
+                    </li>
+                    <li class="events__list-item">
+                        <img src="img/events5.jpg" alt="Service photo 1" class="events__list-image">
+                        <p class="events__list-descr">5+ tips to find comfortable co-&nbsp;working space</p>
+                        <p class="events__list-name">Mykola Ilschenko</p>
+                    </li>
+                </ul>
+            </div>
+            <p class="events__more events__more-600">
+                <a href="#" class="more-active">See more</a>
+            </p>
+        </section>
+    </main>
+    <footer id="contact-us" class="footer">
+        <div class="container footer__container">
+            <div class="footer__block">
+                <p class="footer__logo">Frispes</p>
+                <p class="footer__text">We offer comfortable spaces, cozy cafe, high-speed internet, spacious parking area and many more for your best workspaces and meetings</p>
+                <ul class="footer__links">
+                    <li class="footer__links-item">
+                        <a href="#">
+                        <svg class="svg__link" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 7.80863 2 5.71294 3.05041 4.26718C3.38964 3.80026 3.80026 3.38964 4.26718 3.05041C5.71294 2 7.80863 2 12 2C16.1914 2 18.2871 2 19.7328 3.05041C20.1997 3.38964 20.6104 3.80026 20.9496 4.26718C22 5.71294 22 7.80863 22 12C22 16.1914 22 18.2871 20.9496 19.7328C20.6104 20.1997 20.1997 20.6104 19.7328 20.9496C18.2871 22 16.1914 22 12 22C7.80863 22 5.71294 22 4.26718 20.9496C3.80026 20.6104 3.38964 20.1997 3.05041 19.7328C2 18.2871 2 16.1914 2 12ZM12 6.70588C9.07632 6.70588 6.70588 9.07632 6.70588 12C6.70588 14.9237 9.07632 17.2941 12 17.2941C14.9237 17.2941 17.2941 14.9237 17.2941 12C17.2941 9.07632 14.9237 6.70588 12 6.70588ZM12 15.3088C10.1762 15.3088 8.69118 13.8238 8.69118 12C8.69118 10.1749 10.1762 8.69118 12 8.69118C13.8238 8.69118 15.3088 10.1749 15.3088 12C15.3088 13.8238 13.8238 15.3088 12 15.3088ZM18.3966 6.30883C18.3966 6.69844 18.0808 7.01427 17.6912 7.01427C17.3016 7.01427 16.9857 6.69844 16.9857 6.30883C16.9857 5.91923 17.3016 5.60339 17.6912 5.60339C18.0808 5.60339 18.3966 5.91923 18.3966 6.30883Z" fill="white"/>
+                        </svg></a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a href="#">
+                        <svg class="svg__link" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.3903 4.11407C22.4182 4.39093 23.2288 5.20135 23.5055 6.22948C24.0197 8.1074 23.9999 12.0218 23.9999 12.0218C23.9999 12.0218 23.9999 15.9163 23.5057 17.7944C23.2288 18.8223 22.4184 19.6329 21.3903 19.9096C19.5122 20.404 12 20.404 12 20.404C12 20.404 4.50731 20.404 2.60961 19.89C1.58148 19.6131 0.771054 18.8025 0.4942 17.7746C0 15.9163 0 12.002 0 12.002C0 12.002 0 8.1074 0.4942 6.22948C0.770871 5.20153 1.60125 4.37115 2.60943 4.09448C4.48753 3.6001 11.9998 3.6001 11.9998 3.6001C11.9998 3.6001 19.5122 3.6001 21.3903 4.11407ZM15.8549 12.0021L9.60788 15.6001V8.40404L15.8549 12.0021Z" fill="white"/>
+                        </svg></a>
+                    </li>
+                    <li class="footer__links-item">
+                        <a href="#">
+                        <svg class="svg__link" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.563 1.00458L14.7857 1C11.6655 1 9.64916 3.12509 9.64916 6.41423V8.91055H6.85674C6.61544 8.91055 6.42004 9.1115 6.42004 9.35937V12.9763C6.42004 13.2241 6.61567 13.4249 6.85674 13.4249H9.64916V22.5514C9.64916 22.7993 9.84455 23 10.0859 23H13.7292C13.9705 23 14.1659 22.799 14.1659 22.5514V13.4249H17.4308C17.6721 13.4249 17.8675 13.2241 17.8675 12.9763L17.8689 9.35937C17.8689 9.24036 17.8228 9.12638 17.741 9.04215C17.6592 8.95793 17.5478 8.91055 17.432 8.91055H14.1659V6.79439C14.1659 5.77727 14.4018 5.26094 15.6916 5.26094L17.5625 5.26025C17.8036 5.26025 17.999 5.0593 17.999 4.81166V1.45317C17.999 1.20576 17.8038 1.00504 17.563 1.00458Z" fill="white"/>
+                        </svg></a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="footer__list-of-lists">
+                <ul class="footer__lists footer__lists_adaptiv">
+                    <li class="footer__lists-title">Spaces</li>
+                    <li class="footer__lists-item"><a href="#">Co-working spaces</a></li>
+                    <li class="footer__lists-item"><a href="#">Meeting rooms</a></li>
+                    <li class="footer__lists-item"><a href="#">Event spaces</a></li>
+                    <li class="footer__lists-item"><a href="#">Child playground</a></li>
+                    <li class="footer__lists-item"><a href="#">Cafe & resto</a></li>
+                </ul>
+                <ul class="footer__lists footer__lists_adaptiv">
+                    <li class="footer__lists-title">Company</li>
+                    <li class="footer__lists-item"><a href="#">About Us</a></li>
+                    <li class="footer__lists-item"><a href="#">Pricing</a></li>
+                    <li class="footer__lists-item"><a href="#">Careers</a></li>
+                    <li class="footer__lists-item"><a href="#">Press</a></li>
+                </ul>
+                <ul class="footer__lists footer__lists_adaptiv">
+                    <li class="footer__lists-title">Support</li>
+                    <li class="footer__lists-item"><a href="#">FAQs</a></li>
+                    <li class="footer__lists-item"><a href="#">Privacy Policy</a></li>
+                    <li class="footer__lists-item"><a href="#">Help</a></li>
+                </ul>
+                <ul class="footer__lists">
+                    <li class="footer__lists-title">Contact Us</li>
+                    <li class="footer__lists-item"><a href="mailto:Hello@frispes.com">E. Hello@frispes.com</a></li>
+                    <li class="footer__lists-item">A. Jalan Jayakatwang  No.301<br>Ngasem, Kediri</li>
+                    <li class="footer__lists-item"><a href="tel:+6282334670000">P. (+62) 82334670000</a></li>
+                </ul>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

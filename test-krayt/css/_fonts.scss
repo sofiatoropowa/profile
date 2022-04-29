@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'Lora';
+	src: local('Lora-Bold'),
+		url('../fonts/Lora-Bold.woff') format('woff');
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lora';
+	src: local('Lora-Regular'),
+		url('../fonts/Lora-Regular.woff') format('woff');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: local('Lato-Medium'),
+		url('../fonts/Lato-Medium.woff') format('woff');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PlayfairDisplay';
+	src: local('PlayfairDisplay-Bold'),
+		url('../fonts/PlayfairDisplay-Bold.woff') format('woff');
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}

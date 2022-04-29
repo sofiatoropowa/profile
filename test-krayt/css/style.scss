@@ -1,0 +1,1403 @@
+@import '_common.scss';
+@import '_variables.scss';
+@import '_fonts.scss';
+@import '_mixin.scss';
+
+.arrows {
+    &__left {
+        margin-right: 23px;
+        cursor: pointer;
+    }
+
+    &__right {
+        cursor: pointer;
+    }
+}
+
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+    margin-top: 45px;
+
+    &__logo {
+        color: $colorBlue;
+        font-weight: 700;
+        font-size: 24px;
+        font-family: 'PlayfairDisplay', serif;
+        margin-right: 187px;
+    }
+
+    &__menu {
+        @include clearListStyles();
+        display: flex;
+        font-weight: 700;
+        font-size: 16px;
+        color: $colorTitle;
+        margin-top: 10px;
+
+        &-item:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+
+    .menu-link a:hover {
+        color: $colorTextRed;
+    }
+
+    &__btns {
+        margin-left: auto;
+        margin-top: 6px;
+
+        &-login {
+            @include clearButtonStyles();
+            @include headerBtns();
+            color: $colorTextRed;
+            background-color: $colorBackground;
+        }
+
+        &-sign-up {
+            @include clearButtonStyles();
+            @include headerBtns();
+            color: $colorBackground;
+            background-color: $colorTextRed;
+        }
+
+        &-login:hover, &-sign-up:hover {
+            box-shadow: 0 0 15px rgba(255, 87, 36, 0.5);
+        }
+    }
+}
+
+.hero {
+    margin-top: 0;
+    margin-bottom: 112px;
+
+    &__subtitle {
+        color: $colorTitle;
+        @include subTitle();
+        margin-bottom: 10px;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin: 0;
+        max-width: 667px;
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 67px;
+        color: $colorTitle;
+        margin-bottom: 34px;
+    }
+
+    &__word {
+        display: inline;
+        color: #DD2C00;
+    }
+
+    &__text {
+        margin-top: 12px;
+        max-width: 382px;
+        @include mainText();
+        line-height: 30px;
+        color: #6A6A6A;
+    }
+}
+
+.our-space {
+    margin-top: 87px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 31px;
+
+    &__title {
+        @include mainTitle();
+        color: $colorBlue;
+        margin-right: 164px;
+        padding-bottom: 4px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: #9A9A9A;
+        max-width: 452px;
+        padding-top: 4px;
+    }
+
+    &__caption {
+        margin-top: 22px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        color: $colorTitle;
+        margin-bottom: 0;
+    }
+
+    &__arrows {
+        margin-left: auto;
+        margin-top: auto;
+        padding-bottom: 10px;
+    }
+
+    &__list {
+        @include clearListStyles();
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card {
+        background-color: $colorBlue;
+        max-width: 350px;
+        padding: 144px 50px;
+        color: $colorBackground;
+        text-align: center;
+        position: relative;
+
+        &-title {
+            margin-top: 2px;
+            font-weight: 400;
+            font-size: 32px;
+            margin-bottom: 18px;
+        }
+    
+        &-text {
+            margin: 0 auto;
+            max-width: 253px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            font-family: 'Lato', serif;
+        }
+
+        &-block {
+            position: relative;
+        }
+    
+        &-btn {
+            @include clearButtonStyles();
+            font-weight: 700;
+            font-size: 18px;
+            color: $colorBackground;
+            padding: 25px 79px 25px 54px;
+            background: $colorTextRed;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-image: url('../img/pointer.svg');
+            background-position: 203px center;
+            background-repeat: no-repeat;
+            font-family: 'Lato', serif;
+        }
+
+        &-btn2 {
+            @include clearButtonStyles();
+            width: 72px;
+            height: 72px;
+            background: $colorTextRed;
+            background-image: url('../img/pointer.svg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: 1.1%;
+            left: 0;
+        }
+    }
+
+    &__img {
+        margin: 50px 43% 0;
+    }
+}
+
+.why-frispes {
+    margin-bottom: 114px;
+    display: flex;
+
+    &__list_870 {
+        display: none;
+    }
+
+    &__list {
+        @include clearListStyles();
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+
+        &1 {
+            margin-right: 125px;
+        }
+    }
+
+    &__item {
+
+        margin-bottom: 20px;
+
+        &-number {
+            font-weight: 400;
+            font-size: 32px;
+            color: $colorBlue;
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 64px;
+            margin-bottom: 8px;
+            font-family: 'Lora', serif;
+        }
+
+        &-advantage {
+            font-weight: 400;
+            font-size: 16px;
+            color: #9A9A9A;
+            padding-left: 56px;
+            font-family: 'Lato', serif;
+        }
+    }
+
+    &__number {
+        &1 {
+            background-image: url('../img/why-frispes1.svg');
+        }
+
+        &2 {
+            background-image: url('../img/why-frispes2.svg');
+        }
+
+        &3 {
+            background-image: url('../img/why-frispes3.svg');
+        }
+
+        &4 {
+            background-image: url('../img/why-frispes4.svg');
+        }
+
+        &5 {
+            background-image: url('../img/why-frispes5.svg');
+        }
+
+        &6 {
+            background-image: url('../img/why-frispes6.svg');
+        }
+    }
+
+    &__block {
+        margin-left: auto;
+        color: $colorBackground;
+        background-color: $colorBlue;
+        max-width: 540px;
+        padding: 55px;
+        padding-top: 58px;
+        padding-bottom: 20px;
+    }
+
+    &__subtitle {
+        @include subTitle();
+        margin-bottom: 9px;
+        background-image: url('../img/strip_white.svg');
+        background-position: 123px center;
+    }
+
+    &__title {
+        @include mainTitle();
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        @include mainText();
+        line-height: 30px;
+    }
+}
+
+.our-facilities {
+    margin-bottom: 112px;
+
+    &__subtitle {
+        @include subTitle();
+        background-position: 132px center;
+    }
+
+    &__title {
+        @include mainTitle();
+        max-width: 570px;
+        color: $colorBlue;
+        margin-bottom: 56px;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list {
+        @include clearListStyles();
+        padding-top: 30px;
+        padding-left: 24px;
+
+        &-item {
+            margin-bottom: 48px;
+            font-weight: 700;
+            font-size: 20px;
+            color: $colorTitle;
+        }
+
+        &-item:hover {
+            cursor: pointer;
+            width: 293px;
+            padding: 24px;
+            background-color: $colorTextRed;
+            color: $colorBackground;
+            box-shadow: 0 0 15px rgba(255, 87, 36, 0.5);
+        }
+    }
+}
+
+.frispes-gallery {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 110px;
+    position: relative;
+
+    &__block {
+        top: 1%;
+        left: 54%;
+        position: absolute;
+    }
+
+    &__subtitle {
+        @include subTitle();
+        margin-bottom: 11px;
+        background-position: 135px center;
+    }
+
+    &__title {
+        @include mainTitle();
+        max-width: 500px;
+        color: $colorBlue;
+        margin-bottom: 38px;
+    }
+
+    &__list {
+        @include clearListStyles;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+
+        &-item:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}
+
+.who-use {
+    margin-bottom: 105px;
+    text-align: center;
+
+    &__title {
+        @include mainTitle();
+        color: $colorBlue;
+        margin-bottom: 28px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        color: #9A9A9A;
+        margin-bottom: 70px;
+    }
+
+    &__list {
+        @include clearListStyles();
+        display: flex;
+
+        &-item:not(:last-child) {
+            margin-right: 60px;
+        }
+    }
+}
+
+.reviews {
+    max-width: 1440px;
+    margin: 0 auto 108px;
+
+    &__container {
+        margin-left: 165px;
+    }
+
+    &__subtitle {
+        @include subTitle();
+        background-position: 88px center;
+    }
+
+    &__title {
+        @include mainTitle();
+        max-width: 400px;
+        color: $colorBlue;
+    }
+
+    &__block {
+        display: flex;
+        margin-bottom: 56px;
+        max-width: $containerMaxWidth;
+    }
+
+    &__arrows {
+        margin-left: auto;
+        margin-top: auto;
+    }
+
+    &__list {
+        @include clearListStyles();
+        display: flex;
+    }
+
+    &__card:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__card {
+        max-width: 445px;
+        height: 393px;
+        background-color: $colorBlue;
+        padding: 47px 40px 19px;
+        color: $colorBackground;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-text {
+            margin-top: 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        &-person {
+            display: flex;
+        }
+
+        &-avatar {
+            margin-top: 10px;
+            margin-right: 16px;
+        }
+
+        &-name {
+            margin-bottom: 0;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        &-post {
+            margin-top: 10px;
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        &3 {
+            padding-right: 5px;
+        }
+    }
+
+    &__img {
+        margin: 33px 38% 0;
+    }
+}
+
+.questions {
+
+    &__title {
+        @include mainTitle();
+        margin: 0 auto;
+        text-align: center;
+        max-width: 578px;
+        color: $colorBlue;
+        margin-bottom: 54px;
+    }
+
+    &__list {
+        @include clearListStyles();
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 74px;
+
+        &-item {
+            text-align: center;
+            padding: 15px 40px 36px;
+            width: 350px;
+            font-weight: 400;
+            font-size: 26px;
+            line-height: 33px;
+            font-family: 'Lora', serif;
+        }
+    }
+
+    &__item1 {
+        background-color: $colorBackground;
+        color: black;
+        box-shadow: 0 0 15px rgba(122,122,122,0.3);
+        position: relative;
+    }
+
+    &__item2 {
+        background-color: $colorTextRed;
+        color: $colorBackground;
+        position: relative;
+    }
+
+    &__btn {
+        @include clearButtonStyles();
+        width: 64px;
+        height: 48px;
+        text-align: center;
+        padding-top: 5px;
+        background-color: $colorTextRed;
+        position: absolute;
+        top: 86%;
+        left: 42%;
+
+        &2 {
+            background-color: $colorBackground;
+            box-shadow: 0 0 15px rgba(255, 87, 36, 0.5);
+        }
+    }
+
+    &__btn:hover {
+        box-shadow: 0 0 15px rgba(122,122,122,0.3);
+    } 
+    &__btn2:hover {
+        box-shadow: 0 0 15px rgba(255, 87, 36, 0.5);
+    }
+
+    &__more {
+        cursor: pointer;
+        color: $colorTextRed;
+        text-align: center;
+        background-image: url('../img/pointer_red.svg');
+        background-position: 57% center;
+        background-repeat: no-repeat;
+        margin-bottom: 38px;
+    }
+
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+.events {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-bottom: 67px;
+    background: #F8F8F8;
+
+    &__block {
+        display: flex;
+    }
+
+    &__list {
+        @include clearListStyles();
+        display: flex;
+        flex-wrap: wrap;
+
+        &-descr {
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 28px;
+            color: #222831;
+            margin-top: 13px;
+            margin-left: 16px;
+            margin-bottom: 4px;
+        }
+    
+        &-name {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            color: #9A9A9A;
+            margin-top: 0;
+            margin-left: 15px;
+        }
+
+        &-image {
+            padding: 0;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        @include mainTitle();
+        margin-bottom: 54px;
+        color: $colorBlue;
+    }
+
+    &__more {
+        margin-left: auto;
+        cursor: pointer;
+        color: $colorTextRed;
+        padding-top: 10px;
+        padding-right: 45px;
+        background-image: url('../img/pointer_red.svg');
+        background-position: 90px 10px;
+        background-repeat: no-repeat;
+    }
+
+    &__list-item {
+        background-color: $colorBackground;
+        max-width: 350px;
+        margin-bottom: 30px;
+        height: 320px;
+    }
+
+    &__list-item:hover {
+        cursor: pointer;
+        box-shadow: 0 0 15px rgba(122,122,122,0.3);
+    }
+
+    &__list-item:not(:nth-child(3n)) {
+        margin-right: 30px;
+    }
+
+    &__insight {
+        padding: 32px;
+        padding-left: 2px;
+
+        &-title {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 41px;
+            color: $colorTitle;
+            margin-bottom: 24px;
+        }
+
+        &-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #9A9A9A;
+            margin-bottom: 1px;
+        }
+
+        &-person {
+            display: flex;
+        }
+
+        &-avatar {
+            margin-right: 23px;
+        }
+
+        &-name {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            color: $colorBlue;
+            margin-bottom: 0;
+        }
+
+        &-post {
+            margin-top: 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            color: #9A9A9A;
+        }
+    }
+}
+
+.more-active:hover {
+    color: $colorTitle;
+}
+
+.more-active:focus {
+    color: $colorTitle;
+    box-shadow: 0 0 5px rgba(255, 87, 36, 0.5);
+}
+
+.footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #0D2C4A;
+    color: $colorBackground;
+    font-weight: 400;
+    font-size: 16px;
+
+    &__container {
+        padding-top: 56px;
+        padding-bottom: 102px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__block {
+        margin-right: 65px;
+    }
+
+    &__logo {
+        margin-top: 3px;
+        font-weight: 700;
+        font-size: 52px;
+        margin-bottom: 16px;
+        font-family: 'Lora', serif;
+        margin-bottom: 21px;
+    }
+
+    &__text {
+        max-width: 255px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #F8F8F8;
+        margin-bottom: 23px;
+    }
+
+    &__links {
+        @include clearListStyles();
+        display: flex;
+        margin-right: 125px;
+
+        &-item {
+            margin-right: 18px;
+        }
+    }
+
+    &__list-of-lists {
+        display: flex;
+        padding-top: 20px;
+    }
+
+    &__lists {
+        @include clearListStyles();
+
+        &-title {
+            font-weight: 500;
+            font-size: 20px;
+            opacity: 0.5;
+            margin-bottom: 30px;
+        }
+
+        &-item {
+            margin-bottom: 14px;
+            font-weight: 400;
+            font-size: 16px;
+            font-family: 'Lato', serif;
+        }
+    }
+
+    &__lists:not(:last-child) {
+        margin-right: 68px;
+    }
+}
+
+.svg__link:hover path{
+    fill: $colorTextRed;
+}
+
+.frispes-gallery__660, .events__more-600 {
+    display: none;
+}
+
+.why-frispes__list_870 {
+    display: none;
+}
+
+@media screen and (max-width: 1440px) {
+
+    body {
+        margin: 0 auto;
+        max-width: 95%;
+    }
+
+    .hero {
+
+        &__text {
+            margin-left: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 1201px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .burger {
+        margin-left: 50px;
+        display: block;
+
+        svg path {
+            fill: $colorTitle;
+        }
+    }
+
+    .header {
+        &__menu {
+            display: none;
+        }
+    }
+
+    .our-space {
+    
+        &__title {
+            margin-right: 100px;
+        }
+    
+        &__text {
+            font-size: 16px;
+            max-width: 300px;
+        }
+
+        &__card {
+            max-width: 300px;
+
+            &1 {
+                max-width: 300px;
+            }
+        }
+    }
+
+    .why-frispes {
+    
+        &__list1 {
+            margin-right: 50px;
+        }
+    }
+    .frispes-gallery {
+
+        &__title {
+            margin-bottom: 15px;
+        }
+    }
+
+    .reviews__card3 {
+        display: none;
+    }
+
+    .questions {
+    
+        &__list {
+            flex-direction: column;
+            align-items: center;
+    
+            &-item:not(:last-child) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .events {
+
+        &__list {
+            justify-content: center;
+        }
+    
+        &__list-item:nth-child(3n) {
+            margin-right: 30px;
+        }
+    }
+
+    .footer__container {
+        padding: 20px 40px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .hero {
+        &__title {
+            font-size: 36px;
+            line-height: 40px;
+        }
+    }
+
+    .our-space {
+        &__list {
+            justify-content: center;
+        }
+
+        &__card1 {
+
+            margin-right: 30px;
+
+            &_adaptive {
+                display: none;
+            }
+        }
+    }
+
+    .why-frispes {
+        &__item {
+
+            margin-bottom: 5px;
+        }
+    }
+
+    .our-facilities {
+        &__list {
+            padding-left: 0;
+        }
+
+        &__img {
+            max-width: 67%;
+        }
+    }
+
+    .footer {
+    
+        &__block {
+            margin-right: 30px;
+        }
+    
+        &__lists:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 885px) {
+
+    .events {
+        text-align: center;
+
+        &__list {
+            justify-content: center;
+        }
+    }
+
+    .footer__lists_adaptiv {
+        display: none;
+    }
+
+    .why-frispes {
+        flex-direction: column;
+
+        &__870 {
+            display: flex;
+            margin: 0 auto;
+        }
+
+        &__block {
+            margin: 0 auto;
+        }
+
+        &__max {
+            display: none;
+        }
+
+        &__list_870 {
+            display: block;
+        }
+    }
+
+    .why-frispes__list_870 {
+        display: block;
+    }
+
+    .our-facilities {
+        &__list {
+            margin: 0 auto;
+    
+            &-item {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .reviews {
+        max-width: 1440px;
+        margin: 0 auto 108px;
+    
+        &__container {
+            margin-left: 165px;
+        }
+    
+        &__subtitle {
+            @include subTitle();
+            background-position: 88px center;
+        }
+    
+        &__title {
+            @include mainTitle();
+            max-width: 400px;
+            color: $colorBlue;
+        }
+    
+        &__block {
+            display: flex;
+            margin-bottom: 56px;
+            max-width: $containerMaxWidth;
+        }
+    
+        &__arrows {
+            margin-left: auto;
+            margin-top: auto;
+        }
+    
+        &__list {
+            @include clearListStyles();
+            display: flex;
+        }
+    
+        &__card:not(:last-child) {
+            margin-right: 30px;
+        }
+    
+        &__card {
+            max-width: 350px;
+            height: 100%;
+            padding: 47px 40px 19px;
+    
+            &-text {
+                font-size: 14px;
+                line-height: 20px;
+            }
+    
+            &-name {
+                margin-bottom: 0;
+                font-weight: 700;
+                font-size: 14px;
+            }
+    
+            &-post {
+                margin-top: 10px;
+                font-weight: 400;
+                font-size: 12px;
+            }
+        }
+    
+        &__img {
+            margin: 33px 38% 0;
+        }
+    }
+
+    .questions__more {
+        background-position: 62% center;
+    }
+
+}
+
+@media screen and (max-width: 660px) {
+
+    .header, .hero, .our-space, .why-frispes, .our-facilities, .frispes-gallery, .who-use, .reviews, .questions {
+        margin-bottom: 30px;
+    }
+
+    .header {
+        &__logo {
+            margin-right: 30px;
+        }
+    }
+
+    .our-space {
+        &__title {
+            margin-right: 10px;
+        }
+    }
+
+    .our-facilities {
+
+        &__title {
+            margin-bottom: 20px;
+        }
+
+        &__list {
+    
+            &-item {
+                margin-bottom: 20px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .frispes-gallery {
+        &__max {
+            display: none;
+        }
+
+        &__660 {
+            margin-top: 15px;
+            text-align: center;
+            display: block;
+        }
+    }
+
+    .who-use {
+
+        &__text {
+            font-weight: 500;
+            font-size: 18px;
+            color: #9A9A9A;
+            margin-bottom: 20px;
+        }
+    
+        &__list {
+            justify-content: center;
+            flex-wrap: wrap;
+    
+            &-item:not(:last-child) {
+                margin-right: 40px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .our-space {
+
+        flex-direction: column;
+
+        &__600, &__img {
+            display: none;
+        }
+    }
+
+    .who-use {
+
+        &__list {
+            display: none;
+        }
+    }
+
+    .reviews__card2 {
+        display: none;
+    }
+    
+    .questions {
+
+        &__title {
+            margin-bottom: 34px;
+        }
+    
+        &__list {
+            margin-bottom: 54px;
+    
+            &-item {
+                padding: 5px 10px 26px;
+                width: 250px;
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+
+        &__btn {
+            padding-top: 2px;
+            width: 44px;
+            height: 30px;
+        }
+    }
+
+    .footer {
+        font-size: 14px;
+    
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__block {
+            margin-right: 0;
+        }
+    
+        &__logo {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 16px;
+        }
+    
+        &__text {
+            margin: auto;
+            text-align: center;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        &__list-of-lists {
+            margin: 0;
+            padding: 0;
+        }
+
+        &__links {
+            justify-content: center;
+            text-align: center;
+            margin: 20px auto;
+        }
+    
+        &__lists {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .header {
+        justify-content: space-between;
+
+        &__btns {
+            display: none;
+        }
+    }
+
+    .hero {
+
+        &__block {
+            flex-direction: column;
+        }
+    }
+
+    .why-frispes {
+        
+        &__item {
+
+            margin-bottom: 20px;
+            
+            &-number {
+                font-size: 24px;
+                background-size: 28px;
+                padding-left: 40px;
+            }
+    
+            &-advantage {
+                font-weight: 400;
+                font-size: 14px;
+                padding-left: 40px;
+            }
+        }
+    }
+
+    .frispes-gallery {
+
+        &__block {
+            left: 0;
+            text-align: center;
+            position: inherit;
+        }
+    
+        &__subtitle {
+            background: none;
+        }
+    
+        &__list {
+            margin-top: 10px;
+            &-item:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .reviews {
+        max-width: 1440px;
+        margin: 0 auto 108px;
+    
+        &__container {
+            margin: 0 auto;
+        }
+    
+        &__subtitle {
+            text-align: center;
+            background: none;
+            margin: 20px auto; 
+        }
+    
+        &__title {
+            margin: 0 auto;
+        }
+    
+        &__arrows {
+            display: none;
+        }
+    
+        &__card {
+            margin:0 auto;
+        }
+    }
+
+    .questions__more, .events__more {
+        background: none;
+    }
+    
+    .events {
+        &__insight {
+            padding: auto;
+    
+            &-title {
+                font-size: 20px;
+                line-height: 20px;
+                margin-bottom: 20px;
+            }
+    
+            &-text {
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 20px;
+            }
+    
+            &-name {
+                font-size: 14px;
+            }
+    
+            &-post {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .events__list {
+
+        &-descr {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        &-name {
+            font-size: 14px;
+        }
+    }
+
+    .our-facilities {
+    
+        &__subtitle {
+            text-align: center;
+            background: none;
+            margin-bottom: 20px;
+        }
+    
+        &__title {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    
+        &__block {
+            text-align: center;
+            flex-direction: column;
+        }
+
+        &__img {
+            margin: 0 auto;
+        }
+    }
+
+    .events {
+
+        &__title {
+            margin: 0 auto 20px;
+        }
+
+        &__more-max {
+            display: none;
+        }
+    }
+
+}
