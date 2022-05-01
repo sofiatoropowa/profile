@@ -1,0 +1,484 @@
+@font-face {
+	font-family: 'SFProDisplay';
+	src: local('SFProDisplay-Semibold'),
+		url('/font/SFProDisplay-Semibold.woff2') format('woff2'),
+		url('/font/SFProDisplay-Semibold.woff') format('woff');
+	font-display: swap;
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFProDisplay';
+	src: local('SFProDisplay-Medium'),
+		url('/font/SFProDisplay-Medium.woff2') format('woff2'),
+		url('/font/SFProDisplay-Medium.woff') format('woff');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFProDisplay';
+	src: local('SFProDisplay-Regular'),
+		url('/font/SFProDisplay-Regular.woff2') format('woff2'),
+		url('/font/SFProDisplay-Regular.woff') format('woff');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'SFProDisplay', sans-serif;
+    background-color: #E5E5E5;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* glob*/
+button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+/* header */
+.header {
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    padding: 10px 250px;
+    margin-bottom: 40px;
+}
+
+.header__line {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.header__btn-create {
+    margin-right: 21px;
+}
+
+.header__selection {
+    border: 1px solid #babfc3;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6D7175;
+}
+
+.header__sorting {
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #babfc3;
+    color: #6D7175;
+    border-radius: 4px;
+    padding: 9px 12px;
+    font-weight: 400;
+    font-size: 14px
+}
+
+/* creating-task */
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease 0s;
+}
+
+.popup__body {
+    min-height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.popup__content {
+    flex-basis: 780px;
+    background-color: #FFFFFF;
+    padding: 40px;
+}
+
+.creating-task__header {
+    font-weight: 600;
+    font-size: 26px;
+    color: #202223;
+    margin-bottom: 32px;
+}
+
+.creating-task__label {
+    font-weight: 400;
+    font-size: 14px;
+    color: #202223;
+    margin-bottom: 4px;
+}
+
+.creating-task__name {
+    margin-bottom: 21px;
+    padding: 8px 12px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.creating-task__description {
+    max-height: 72px;
+    margin-bottom: 31px;
+    padding: 8px 12px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.creating-task__line {
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.creating-task__select {
+    font-weight: 400;
+    font-size: 14px;
+    max-width: 146px;
+    margin-right: 53px;
+    padding: 8px 12px;
+    border: 1px solid #babfc3;
+    border-radius: 4px;
+    color: #202223;
+}
+
+.creating-task__calendar {
+    max-width: 176px;
+    padding: 8px 12px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.form__input {
+    max-width: 700px;
+    border: 1px solid #A7ACB1;
+    border-radius: 4px;
+}
+
+.btns {
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+.btn__discord {
+    color: #202223;
+    border: 1px solid #BBBFC3;
+}
+
+.btn__create {
+    color: #FFFFFF;
+    background-color: #008060;
+    border: 1px solid #008060;
+}
+
+.popup_active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* task-card */
+.task-card {
+    max-width: 780px;
+    background-color: #FFFFFF;
+    margin: 0px auto 20px;
+    padding: 20px;
+    position: relative;
+}
+
+.task-card__function {
+    top: 28px;
+    right: 22px;
+    position: absolute;
+}
+
+.task-card__dates {
+    display: flex;
+}
+
+.task-card__period {
+    margin-right: 22px;
+}
+
+.login_second {
+    display: none;
+}
+
+.user-info {
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: -15px;
+}
+
+.user-info-avatar {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 10px;
+    color: white;
+    background-color: #F0C5FF;
+}
+
+.user-info-name {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 14px;
+    color: #202223;
+}
+
+.task-card__title {
+    font-weight: 600;
+    font-size: 16px;
+    color: #202223;
+    margin-bottom: 10px;
+}
+
+.task-card__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #202223;
+    margin-bottom: 20px;
+}
+
+.status__form {
+    justify-content: space-between;
+}
+
+.table-active {
+    height: 0; 
+    overflow: hidden;
+}
+
+/* delete */
+.delete__task {
+    position: absolute;
+    background-color: #008060;
+    border-radius: 4px;
+    top: 42px;
+    right: 22px;
+    padding: 8px 12px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 1280px) {
+    .header {
+        padding: 10px 150px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+        .header {
+            padding: 10px 100px;
+        }
+
+        .task-card {
+            max-width: 90%;
+            padding: 20px;
+        }
+
+        .popup__body {
+            padding: 20px;
+        }
+}
+
+@media screen and (max-width: 768px) {
+        .header {
+            padding: 10px 20px;
+        }
+
+        .user-info-avatar {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 15px;
+        }
+        
+        .task-card__title {
+            font-size: 14px;
+        }
+        
+        .task-card__text {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        .creating-task__header {
+            font-size: 20px;
+            margin-bottom: 28px;
+        }
+
+        .popup__calendar {
+            font-size: 12px;
+            max-width: 138px;
+        }
+}
+
+@media screen and (max-width: 660px) {
+    .header__selection {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .header__sorting {
+        padding: 8px 10px;
+        font-size: 12px
+    }
+
+    .creating-task__select {
+        font-size: 12px;
+        max-width: 136px;
+        padding: 6px 10px;
+    }
+
+    .creating-task__label {
+        font-size: 12px;
+    }
+    
+    .creating-task__calendar {
+        max-width: 135px;
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+
+    .delete__task {
+        font-size: 12px;
+    }
+    
+    .btns {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .creating-task__line {
+        display: block;
+    }
+
+    .creating-task__select {
+        margin-bottom: 10px;
+    }
+
+    .popup__calendar {
+        margin-bottom: 15px;
+    }
+
+    .close__popup {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .task-card__dates {
+        display: block;
+    }
+
+    .task-card__period {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .header {
+        display: block;
+    }
+
+    .header__line {
+        display: block;
+    }
+
+    .header__btn-create {
+        margin-bottom: 10px;
+    }
+
+    .header__selection {
+        margin-bottom: 10px;
+    }
+
+    .task-card__period {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .login_first {
+        display: none;
+    }
+
+    .login_second {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .task-card__link {
+        display: block;
+    }
+
+    .status__form {
+        flex-direction: column;
+    }
+
+    .popup__body {
+        padding: 10px;
+    }
+
+    .popup__content {
+        padding: 20px;
+    }
+}
