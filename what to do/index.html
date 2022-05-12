@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="btn btn-next">Next</button>
+        <div class="activity">
+            <div class="filter">
+                <ul class="filter__list">
+                    <li>
+                        <button value="education" class="btn filter__list-btn">education</button>
+                    </li>
+                    <li>
+                        <button value="recreational" class="btn filter__list-btn">recreational</button>
+                    </li>
+                    <li>
+                        <button value="social" class="btn filter__list-btn">social</button>
+                    </li>
+                    <li>
+                        <button value="diy" class="btn filter__list-btn">diy</button>
+                    </li>
+                    <li>
+                        <button value="charity" class="btn filter__list-btn">charity</button>
+                    </li>
+                    <li>
+                        <button value="cooking" class="btn filter__list-btn">cooking</button>
+                    </li>
+                    <li>
+                        <button value="relaxation" class="btn filter__list-btn">relaxation</button>
+                    </li>
+                    <li>
+                        <button value="music" class="btn filter__list-btn">music</button>
+                    </li>
+                    <li>
+                        <button value="busywork" class="btn filter__list-btn">busywork</button>
+                    </li>
+                </ul>
+            </div>
+            <div data-type="" class="activity__name"></div>
+            <div>
+                <button class="btn activity__btn-copy" onclick="copyToClipboard()" disabled>Copy</button>
+                <button class="btn activity__btn-done" disabled>Done</button>
+            </div>
+        </div>
+        <div class="history">
+            <div>
+                <table class="history__table">
+                    <caption class="history__caption">History of actions</caption>
+                    <tr class="history__tr">
+                        <th class="history__th">№</th>
+                        <th class="history__th">Activity</th>
+                        <th class="history__th">Date of completion</th>
+                        <th class="history__th">Category</th>
+                    </tr>
+                </table>
+            </div>
+            <canvas id="myChart" class="diagram"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

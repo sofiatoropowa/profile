@@ -1,0 +1,152 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.btn {
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    padding: 0;
+    border: none;  
+}
+
+.btn:hover {
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+}
+
+.container {
+    max-width: 1680px;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+    /* background-color: rgb(231, 231, 231); */
+}
+
+.btn-next {
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.filter {
+    max-width: 400px;
+
+    &__list {
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+
+        &-btn {
+            padding: 10px 20px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &-active {
+        background-color: #005f4f;
+        background-image: none;
+    }
+
+    &-active:hover {
+        background-color: #005f4f;
+        background-image: linear-gradient(315deg, #005f4f 0%, #03c8a8 74%);
+    }
+
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    &__text {
+        margin-right: 10px;
+        font-size: 20px;
+    }
+
+    &__select {
+        font-family: 'OpenSans';
+        font-size: 20px; 
+    }
+}
+
+.activity {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 80px;
+
+    &__name {
+        width: 800px;
+        padding: 10px 30px;
+        font-size: 36px;
+        border-bottom: 1px solid black;
+        margin-right: 30px;
+    }
+
+    &__btn-copy,
+    &__btn-done {
+        width: 70px;
+        height: 40px;
+        font-size: 14px;
+        opacity: 0.5;
+        cursor: default;
+    }
+}
+
+.btn-active {
+    width: 80px;
+    top: 2px;
+    background-color: green;
+    background-image: none;
+    transition: all 0.1s ease;
+}
+
+.history {
+    font-size: 18px;
+    display: flex;
+
+    &__caption {
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-decoration: underline #4dccc6;
+    }
+
+    &__table,
+    &__th,
+    &__tr,
+    &__td {
+        border: 1px solid grey;
+    }
+
+    &__table {
+        border-collapse: collapse;
+        margin-right: 30px;
+    }
+
+    &__th,
+    &__td {
+        padding: 5px 8px;
+    }
+}
+
+.diagram {
+    max-width: 50%;
+    margin-left: auto;
+}
