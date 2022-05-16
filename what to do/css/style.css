@@ -1,9 +1,42 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
 ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1800px;
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+  /* background-color: rgb(231, 231, 231); */
+}
+
+/*variables*/
+/* btns */
 .btn {
   color: #fff;
   border-radius: 10px;
@@ -28,15 +61,7 @@ ul {
   background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
 }
 
-.container {
-  max-width: 1680px;
-  margin: auto;
-  padding: 50px;
-  text-align: center;
-  /* background-color: rgb(231, 231, 231); */
-}
-
-.btn-next {
+.btn-next, .btn-add {
   width: 300px;
   height: 60px;
   font-size: 20px;
@@ -106,7 +131,7 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 
 .activity__name {
@@ -134,11 +159,96 @@ ul {
   transition: all 0.1s ease;
 }
 
+.top {
+  margin-bottom: 50px;
+}
+
+.top__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+}
+
+.top__title {
+  font-size: 50px;
+  margin: 0;
+  margin-right: 20px;
+  border-bottom: 2px solid #F4E660;
+}
+
+.top__icon {
+  width: 70px;
+}
+
+.top__list {
+  margin: 0 auto 40px;
+  counter-reset: list;
+  width: 50%;
+}
+
+.top__list-no-activities {
+  font-size: 22px;
+  list-style-type: none;
+}
+
+.top__list-item {
+  font-size: 22px;
+  margin-bottom: 18px;
+  position: relative;
+  display: block;
+  padding: .4em .4em .4em 2em;
+  margin: .5em 0;
+  background: #e7e6e6;
+  color: #444;
+  text-decoration: none;
+  border-radius: .3em;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+.top__list-item:before {
+  counter-increment: list;
+  content: counter(list);
+  position: absolute;
+  left: -1.3em;
+  top: 50%;
+  margin-top: -1.3em;
+  background: #4dccc6;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  border: .3em solid white;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.top__list-item:hover {
+  background: #c4c4c4;
+}
+
+.top__list-item:hover:before {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
 .history {
   font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .history__caption {
@@ -155,14 +265,28 @@ ul {
 .history__table {
   border-collapse: collapse;
   margin-right: 30px;
+  margin-bottom: 15px;
 }
 
 .history__th, .history__td {
-  padding: 5px 8px;
+  padding: 5px 10px;
+}
+
+.history__clear {
+  padding: 10px;
 }
 
 .diagram {
-  max-width: 50%;
+  max-width: 40%;
   margin-left: auto;
+}
+
+.my-actions__input {
+  padding: 10px;
+  font-size: 12px;
+}
+
+.my-actions__btn {
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */

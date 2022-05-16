@@ -7,10 +7,13 @@
     <title>Activities</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <button class="btn btn-next">Next</button>
+        <button class="btn btn-add">Add your activity</button>
+        <div class="my-actions"></div>
         <div class="activity">
             <div class="filter">
                 <ul class="filter__list">
@@ -41,6 +44,9 @@
                     <li>
                         <button value="busywork" class="btn filter__list-btn">busywork</button>
                     </li>
+                    <li>
+                        <button value="my-action" class="btn filter__list-btn">My Action</button>
+                    </li>
                 </ul>
             </div>
             <div data-type="" class="activity__name"></div>
@@ -48,6 +54,13 @@
                 <button class="btn activity__btn-copy" onclick="copyToClipboard()" disabled>Copy</button>
                 <button class="btn activity__btn-done" disabled>Done</button>
             </div>
+        </div>
+        <div class="top">
+            <div class="top__block">
+                <p class="top__title">Top 5</p>
+                <img class="top__icon" src="/img/cup.svg" alt="">
+            </div>
+            <ol class="top__list"></ol>
         </div>
         <div class="history">
             <div>
@@ -58,8 +71,10 @@
                         <th class="history__th">Activity</th>
                         <th class="history__th">Date of completion</th>
                         <th class="history__th">Category</th>
+                        <th class="history__th">Rating</th>
                     </tr>
                 </table>
+                <button class="btn history__clear">Clear the history</button>
             </div>
             <canvas id="myChart" class="diagram"></canvas>
         </div>

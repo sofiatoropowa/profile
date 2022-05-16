@@ -1,9 +1,15 @@
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+@import '_common.scss';
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
 
+/*variables*/
+$colorMain: #4dccc6;
+
+/* btns */
 .btn {
     color: #fff;
     border-radius: 10px;
@@ -17,8 +23,8 @@ ul {
      7px 7px 20px 0px rgba(0,0,0,.1),
      4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
-    background-color: #4dccc6;
-    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    background-color: $colorMain;
+    background-image: linear-gradient(315deg, $colorMain 0%, #96e4df 74%);
     padding: 0;
     border: none;  
 }
@@ -28,19 +34,14 @@ ul {
     background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
 }
 
-.container {
-    max-width: 1680px;
-    margin: auto;
-    padding: 50px;
-    text-align: center;
-    /* background-color: rgb(231, 231, 231); */
-}
-
-.btn-next {
-    width: 300px;
-    height: 60px;
-    font-size: 20px;
-    margin-bottom: 30px;
+.btn {
+    &-next,
+    &-add {
+        width: 300px;
+        height: 60px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
 }
 
 .filter {
@@ -71,9 +72,7 @@ ul {
 }
 
 .category {
-    display: flex;
-    align-items: center;
-    justify-content:center;
+    @include flexCenter();
 
     &__text {
         margin-right: 10px;
@@ -87,10 +86,8 @@ ul {
 }
 
 .activity {
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    margin-bottom: 80px;
+    @include flexCenter();
+    margin-bottom: 30px;
 
     &__name {
         width: 800px;
@@ -118,14 +115,86 @@ ul {
     transition: all 0.1s ease;
 }
 
+.top {
+    margin-bottom: 50px;
+
+    &__block {
+        @include flexCenter();
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        font-size: 50px;
+        margin: 0;
+        margin-right: 20px;
+        border-bottom: 2px solid #F4E660;
+    }
+
+    &__icon {
+        width: 70px;
+    }
+
+    &__list {
+        margin: 0 auto 40px;
+        counter-reset: list;
+        width: 50%;
+
+        &-no-activities {
+            font-size: 22px;
+            list-style-type: none;
+        }
+
+        &-item {
+            font-size: 22px;
+            margin-bottom: 18px;
+            position: relative;
+            display: block;
+            padding: .4em .4em .4em 2em;
+            margin: .5em 0;
+            background: #e7e6e6;
+            color: #444;
+            text-decoration: none;
+            border-radius: .3em;
+            transition: .3s ease-out;
+
+            &:before {
+                counter-increment: list;
+                content: counter(list);
+                position: absolute;
+                left: -1.3em;
+                top: 50%;
+                margin-top: -1.3em;
+                background: $colorMain;
+                height: 2em;
+                width: 2em;
+                line-height: 2em;
+                border: .3em solid white;
+                text-align: center;
+                font-weight: bold;
+                border-radius: 2em;
+                transition: all .3s ease-out;
+            }
+        }
+        
+        &-item:hover {
+            background: #c4c4c4;
+
+            &:before {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
 .history {
     font-size: 18px;
     display: flex;
+    justify-content: flex-start;
 
     &__caption {
         font-size: 20px;
         margin-bottom: 20px;
-        text-decoration: underline #4dccc6;
+        text-decoration: underline $colorMain;
     }
 
     &__table,
@@ -138,15 +207,31 @@ ul {
     &__table {
         border-collapse: collapse;
         margin-right: 30px;
+        margin-bottom: 15px;
     }
 
     &__th,
     &__td {
-        padding: 5px 8px;
+        padding: 5px 10px;
+    }
+
+    &__clear {
+        padding: 10px;
     }
 }
 
 .diagram {
-    max-width: 50%;
+    max-width: 40%;
     margin-left: auto;
+}
+
+.my-actions {
+    &__input {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    &__btn {
+        padding: 10px;
+    }
 }
